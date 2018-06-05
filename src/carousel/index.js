@@ -16,6 +16,7 @@ class Carousel extends React.Component {
           naturalSlideWidth={16}
           naturalSlideHeight={9}
           totalSlides={6}
+          lockOnWindowScroll={true}
         >
           <Grid columns={10}>
             <ArrowCell center middle width={1}>
