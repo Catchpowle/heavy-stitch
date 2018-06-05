@@ -7,6 +7,7 @@ import Indicator from './indicator';
 import ArrowCell from './ArrowCell';
 import SlidesCell from './SlidesCell';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import './animation.css';
 
 class Carousel extends React.Component {
   render() {
@@ -23,7 +24,7 @@ class Carousel extends React.Component {
               <BackArrow>Back</BackArrow>
             </ArrowCell>
             <SlidesCell>
-              <Slider>
+              <Slider classNameAnimation={'slideAnimation'}>
                 <Slide index={0}><Image src='image-1.png' /></Slide>
                 <Slide index={1}><Image src='image-2.jpg' /></Slide>
                 <Slide index={2}><Image src='image-1.png' /></Slide>
