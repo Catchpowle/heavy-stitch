@@ -13,30 +13,28 @@ class SimpleSlider extends Component {
       slidesToScroll: 1
     };
     return (
-      <div>
-        <Container>
-          <Slider {...settings}>
-            <div>
-              <Image src='4-5-one.png' />
-            </div>
-            <div>
-              <Image src='4-5-two.png' />
-            </div>
-            <div>
-              <Image src='4-5-one.png' />
-            </div>
-            <div>
-              <Image src='4-5-two.png' />
-            </div>
-            <div>
-              <Image src='4-5-one.png' />
-            </div>
-            <div>
-              <Image src='4-5-two.png' />
-            </div>
-          </Slider>
-        </Container>
-      </div>
+      <Container>
+        <Slider {...settings}>
+          <div>
+            <Image src='4-5-one.png' />
+          </div>
+          <div>
+            <Image src='4-5-two.png' />
+          </div>
+          <div>
+            <Image src='4-5-one.png' />
+          </div>
+          <div>
+            <Image src='4-5-two.png' />
+          </div>
+          <div>
+            <Image src='4-5-one.png' />
+          </div>
+          <div>
+            <Image src='4-5-two.png' />
+          </div>
+        </Slider>
+      </Container>
     );
   }
 }
