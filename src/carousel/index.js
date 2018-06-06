@@ -14,8 +14,8 @@ class Carousel extends React.Component {
     return (
       <Container>
         <CarouselProvider
-          naturalSlideWidth={16}
-          naturalSlideHeight={9}
+          naturalSlideWidth={4}
+          naturalSlideHeight={5}
           totalSlides={6}
           lockOnWindowScroll={true}
         >
@@ -25,12 +25,12 @@ class Carousel extends React.Component {
             </ArrowCell>
             <SlidesCell>
               <Slider classNameAnimation={'slideAnimation'}>
-                <Slide index={0}><Image src='image-1.png' /></Slide>
-                <Slide index={1}><Image src='image-2.jpg' /></Slide>
-                <Slide index={2}><Image src='image-1.png' /></Slide>
-                <Slide index={3}><Image src='image-2.jpg' /></Slide>
-                <Slide index={4}><Image src='image-1.png' /></Slide>
-                <Slide index={5}><Image src='image-2.jpg' /></Slide>
+                <Slide index={0}><Image src='4-5-one.png' /></Slide>
+                <Slide index={1}><Image src='4-5-two.png' /></Slide>
+                <Slide index={2}><Image src='4-5-one.png' /></Slide>
+                <Slide index={3}><Image src='4-5-two.png' /></Slide>
+                <Slide index={4}><Image src='4-5-one.png' /></Slide>
+                <Slide index={5}><Image src='4-5-two.png' /></Slide>
               </Slider>
             </SlidesCell>
             <ArrowCell center middle width={1}>
