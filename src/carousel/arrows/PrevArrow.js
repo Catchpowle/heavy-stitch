@@ -1,15 +1,15 @@
 import React from 'react';
 import Button from './button';
-import NextArrowIcon from './NextArrowIcon.js';
+import PrevArrowIcon from './PrevArrowIcon.js';
 
-class NextArrow extends React.Component {
+class PrevArrow extends React.Component {
   render() {
     const { className, style, onClick } = this.props;
 
     return (
       <div className={className} style={{ ...style }}>
         <Button onClick={onClick}>
-          <NextArrowIcon/>
+          <PrevArrowIcon/>
         </Button>
       </div>
     );
@@ -17,4 +17,4 @@ class NextArrow extends React.Component {
 }
 
 
-export default NextArrow;
+export default PrevArrow;
