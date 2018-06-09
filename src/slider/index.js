@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Container from './Container';
 import Image from './Image.js';
 import Slider from 'react-slick';
+import { PrevArrow, NextArrow } from './arrows';
+import './slick.css';
 
 class SimpleSlider extends Component {
   render() {
@@ -10,7 +12,9 @@ class SimpleSlider extends Component {
       infinite: true,
       speed: 200,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      prevArrow: <PrevArrow />,
+      nextArrow: <NextArrow />
     };
     return (
       <Container>
