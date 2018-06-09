@@ -8,7 +8,7 @@ const Button = styled.button`
   background: none;
   border: none;
   &:hover {
-    fill: black;
+    fill: #212121;
   }
 `;
 
