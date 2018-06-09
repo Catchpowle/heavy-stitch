@@ -1,7 +1,7 @@
-import BackArrow from './BackArrow.js';
+import PrevArrow from './PrevArrow.js';
 import NextArrow from './NextArrow.js';
 
 export {
-  BackArrow,
+  PrevArrow,
   NextArrow
 };

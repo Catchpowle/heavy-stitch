@@ -1,13 +1,17 @@
 import React from 'react';
-import NextButton from './NextButton.js';
+import Button from './button';
 import NextArrowIcon from './NextArrowIcon.js';
 
 class NextArrow extends React.Component {
   render() {
+    const { className, style, onClick } = this.props;
+
     return (
-      <NextButton>
-        <NextArrowIcon/>
-      </NextButton>
+      <div className={className} style={{ ...style }}>
+        <Button onClick={onClick}>
+          <NextArrowIcon/>
+        </Button>
+      </div>
     );
   }
 }

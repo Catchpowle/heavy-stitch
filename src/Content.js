@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import SimpleSlider from './slider';
+import Carousel from './carousel';
 
 class Content extends Component {
   render() {
     return (
       <React.Fragment>
-        <SimpleSlider/>
-        <SimpleSlider/>
-        <SimpleSlider/>
-        <SimpleSlider/>
-        <SimpleSlider/>
+        <Carousel/>
+        <Carousel/>
+        <Carousel/>
+        <Carousel/>
+        <Carousel/>
       </React.Fragment>
     );
   }
