@@ -1,5 +1,5 @@
-import SocialLinks from './SocialLinks.js';
-import MailFormAction from './emailForm/MailFormAction.js';
+import SocialLinks from './social-links.js';
+import MailFormAction from './email-form/mail-form-action.js';
 
 export {
   SocialLinks,

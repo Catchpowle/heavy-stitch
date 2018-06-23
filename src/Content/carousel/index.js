@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import Slider from 'react-slick';
-import Container from './container.js';
 import { PrevArrow, NextArrow } from './arrows';
 import Image from './image.js';
 import './slick.css';
+
+const Container = styled.div`
+  margin-bottom: 50px;
+`;
 
 class Carousel extends Component {
   render() {
