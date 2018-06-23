@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
+const Wrapper = styled.div`
   padding: 25px 40px 0;
   width: 100%;
   position: fixed;
@@ -15,4 +15,4 @@ const Container = styled.div`
   }
 `;
 
-export default Container;
+export default Wrapper;

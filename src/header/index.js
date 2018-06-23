@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-import Container from './Container';
+import Wrapper from './wrapper.js';
 import Navigation from './navigation';
 
 class Header extends Component {
   render() {
     return (
-      <Container>
-        <header>
-          <Navigation />
-        </header>
-      </Container>
+      <Wrapper>
+        <Navigation />
+      </Wrapper>
     );
   }
 }

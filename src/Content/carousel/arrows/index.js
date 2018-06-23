@@ -1,5 +1,5 @@
-import PrevArrow from './PrevArrow.js';
-import NextArrow from './NextArrow.js';
+import PrevArrow from './prev-arrow.js';
+import NextArrow from './next-arrow.js';
 
 export {
   PrevArrow,

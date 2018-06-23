@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
-import List from './List.js';
-import Heading from './Heading.js';
+import { Grid } from 'styled-css-grid';
+import Branding from './branding';
+import { HeadingCell, LinksCell }  from './header-cells.js';
+import SocialLinks from '../../channels/social-links.js';
 
 class Navigation extends Component {
   render() {
     return (
       <nav>
-        <List>
-          <li><Heading>Heavy Stitch</Heading></li>
-        </List>
+        <Grid columns={12}>
+          <HeadingCell width={3}>
+            <Branding>Heavy Stitch</Branding>
+          </HeadingCell>
+
+          <LinksCell width={3}left={10}>
+            <SocialLinks />
+          </LinksCell>
+        </Grid>
       </nav>
     );
   }
