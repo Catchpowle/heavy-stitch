@@ -5,6 +5,7 @@ const Container = styled.div`
   margin: 0 auto;
   margin-bottom: 50px;
   padding-top: 40px;
+  text-align: center;
 
   @media (max-width: 1025px) {
     width: 100%;
