@@ -1,0 +1,15 @@
+.slick-arrow {
+  top: 47.5%;
+}
+
+.slick-prev:before, .slick-next:before  {
+  display: none;
+}
+
+.slick-prev {
+    left: -54px;
+}
+
+.slick-next {
+    right: -25px;
+}
