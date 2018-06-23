@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
+const Wrapper = styled.div`
   width: 30%;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -13,4 +13,4 @@ const Container = styled.div`
   }
 `;
 
-export default Container;
+export default Wrapper;

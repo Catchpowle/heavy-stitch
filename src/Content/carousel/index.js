@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Container from './Container';
-import Image from './Image.js';
 import Slider from 'react-slick';
+import Container from './container.js';
 import { PrevArrow, NextArrow } from './arrows';
+import Image from './image.js';
 import './slick.css';
 
 class Carousel extends Component {
@@ -16,6 +16,7 @@ class Carousel extends Component {
       prevArrow: <PrevArrow />,
       nextArrow: <NextArrow />
     };
+
     return (
       <Container>
         <Slider {...settings}>

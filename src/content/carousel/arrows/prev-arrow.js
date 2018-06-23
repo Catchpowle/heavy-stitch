@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './button';
-import PrevArrowIcon from './PrevArrowIcon.js';
+import PrevArrowIcon from './prev-arrow-icon.js';
+import PropTypes from 'prop-types';
 
 class PrevArrow extends React.Component {
   render() {
@@ -16,5 +17,10 @@ class PrevArrow extends React.Component {
   }
 }
 
-
 export default PrevArrow;
+
+PrevArrow.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.string,
+  onClick: PropTypes.string
+};

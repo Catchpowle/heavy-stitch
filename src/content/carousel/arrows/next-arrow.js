@@ -1,6 +1,7 @@
 import React from 'react';
-import Button from './button';
-import NextArrowIcon from './NextArrowIcon.js';
+import Button from './button.js';
+import NextArrowIcon from './next-arrow-con.js';
+import PropTypes from 'prop-types';
 
 class NextArrow extends React.Component {
   render() {
@@ -16,5 +17,10 @@ class NextArrow extends React.Component {
   }
 }
 
-
 export default NextArrow;
+
+NextArrow.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.string,
+  onClick: PropTypes.string
+};

@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-const Heading = styled.h1`
+const Branding = styled.h1`
   margin: 0;
   padding: 0;
   font-weight: 400;
   font-family: 'Rakkas', cursive;
-  font-size: 50px;
+  font-size: 3rem;
   color: #212121;
 
   @media (max-width: 1025px) {
@@ -14,4 +14,4 @@ const Heading = styled.h1`
   }
 `;
 
-export default Heading;
+export default Branding;

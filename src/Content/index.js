@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
-import Container from './Container.js';
+import Wrapper from './wrapper.js';
 import Channels from './channels';
 import Carousel from './carousel';
 
 class Content extends Component {
   render() {
     return (
-      <div>
-        <Container>
-          <Channels/>
-          <Carousel/>
-          <Carousel/>
-          <Carousel/>
-          <Carousel/>
-          <Carousel/>
-        </Container>
-      </div>
+      <Wrapper>
+        <Channels/>
+        <Carousel/>
+        <Carousel/>
+        <Carousel/>
+        <Carousel/>
+        <Carousel/>
+      </Wrapper>
     );
   }
 }
