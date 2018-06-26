@@ -13,3 +13,13 @@
 .slick-next {
     right: -25px;
 }
+
+.slick-dots {
+  bottom: -2rem;
+}
+
+@media (max-width: 1025px) {
+  .slick-dots {
+    bottom: -1rem;
+  }
+}
