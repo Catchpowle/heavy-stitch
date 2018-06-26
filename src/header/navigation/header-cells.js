@@ -11,7 +11,9 @@ const LinksCell = Cell.extend`
 `;
 
 const HeadingCell = styled(Cell)`
-
+  @media (max-width: 1025px) {
+    grid-column-end: span 12;
+  }
 `;
 
 export { HeadingCell, LinksCell };
