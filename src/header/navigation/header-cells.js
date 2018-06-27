@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Cell } from 'styled-css-grid';
 
 const LinksCell = Cell.extend`
-  grid-column-end: span 3;
+  margin: 1rem 0;
   text-align: center;
 
   @media (max-width: 1025px) {

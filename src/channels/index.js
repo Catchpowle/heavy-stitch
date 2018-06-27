@@ -1,7 +1,7 @@
 import SocialLinks from './social-links.js';
-import MailFormAction from './email-form/mail-form-action.js';
+import NewsletterSignup from './newsletter-signup';
 
 export {
   SocialLinks,
-  MailFormAction
+  NewsletterSignup
 };

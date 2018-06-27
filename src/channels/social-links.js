@@ -5,15 +5,15 @@ class SocialLinks extends Component {
   render() {
     return (
       <React.Fragment>
-        <SocialLink 
+        <SocialLink
           iconHref="https://instagram.com/heavystitch"
           iconClasses='fab fa-instagram'
         />
-        <SocialLink 
+        <SocialLink
           iconHref="https://facebook.com/Heavy-Stitch-398227130663776"
           iconClasses='fab fa-facebook'
         />
-        <SocialLink 
+        <SocialLink
           iconHref="https://twitter.com/heavystitch"
           iconClasses='fab fa-twitter'
         />

@@ -7,12 +7,9 @@ class Content extends Component {
   render() {
     return (
       <Wrapper>
+        <Carousel/>
+        <Carousel/>
         <Channels/>
-        <Carousel/>
-        <Carousel/>
-        <Carousel/>
-        <Carousel/>
-        <Carousel/>
       </Wrapper>
     );
   }

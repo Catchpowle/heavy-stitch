@@ -13,7 +13,7 @@ class Navigation extends Component {
             <Branding>Heavy Stitch</Branding>
           </HeadingCell>
 
-          <LinksCell width={3}left={10}>
+          <LinksCell width={4} left={9}>
             <SocialLinks />
           </LinksCell>
         </Grid>

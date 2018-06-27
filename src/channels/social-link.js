@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Icon = styled.i`
   font-size: 30px;
-  margin: 1rem 0.9rem 0;
+  margin: 0 1rem;
 `;
 
 const IconLink = styled.a`
