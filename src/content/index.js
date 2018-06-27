@@ -8,8 +8,8 @@ class Content extends Component {
     return (
       <Wrapper>
         <Carousel/>
-        <Carousel/>
         <Channels/>
+        <Carousel/>
       </Wrapper>
     );
   }

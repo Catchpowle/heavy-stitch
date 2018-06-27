@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { SocialLinks, NewsletterSignup } from '../../channels';
 
 const ChannelsWrapper = styled.div`
-  margin: 0rem 0 0.5rem
+  margin: 0rem 0 2.5rem
 
   @media (min-width: 1025px) {
     display: none;
