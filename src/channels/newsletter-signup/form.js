@@ -24,6 +24,13 @@ const Button = styled.button`
   border: none;
 `;
 
+const Response = styled.div`
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  width: 50%;
+  margin-left: 25%;
+`;
+
 class Form extends Component {
   constructor(props) {
     super(props);
@@ -56,14 +63,12 @@ class Form extends Component {
           </Button>
         </div>
         {this.status === 'error' && (
-          <div
-            style={{ color: 'red' }}
+          <Response
             dangerouslySetInnerHTML={{ __html: this.message }}
           />
         )}
         {this.status === 'success' && (
-          <div
-            style={{ color: 'green' }}
+          <Response
             dangerouslySetInnerHTML={{ __html: this.message }}
           />
         )}
