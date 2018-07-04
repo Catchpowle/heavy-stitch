@@ -9,7 +9,6 @@ class Content extends Component {
       <Wrapper>
         <Carousel/>
         <Channels/>
-        <Carousel/>
       </Wrapper>
     );
   }

@@ -3,11 +3,12 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Link = styled.a`
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3rem;
   color: #FFFFFF;
   background-color: #212121;
   border-radius: 2px;
   font-size: 0.75rem;
+  font-family: sans-serif;
   text-decoration: none;
 `;
 

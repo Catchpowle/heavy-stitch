@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Slider from 'react-slick';
 import { PrevArrow, NextArrow } from './arrows';
-import Image from './image.js';
-import BuyLink from './buy-link.js';
+import looks from '../../looks.js';
+import { Fit, Item } from './slides';
 import './slick.css';
 
 const Card = styled.div`
@@ -18,12 +18,33 @@ const Card = styled.div`
   }
 `;
 
-const Caption = styled.div`
-  text-align: left;
-  margin: 1rem 1rem;
-`;
-
 class Carousel extends Component {
+  displayLooks(looks) {
+    return (Object.keys(looks).map(key => {
+      const fit= looks[key].fit;
+      const items = looks[key].items;
+
+      return (
+        [
+          this.displayFit(fit, key),
+          this.displayItems(items)
+        ]
+      );
+    }));
+  }
+
+  displayFit(fit, key) {
+    return <Fit key={key} src={fit.src} photographer={fit.photographer} />;
+  }
+
+  displayItems(items) {
+    return (
+      Object.keys(items).map(key => {
+        return <Item key={key} src={items[key].src} caption={items[key].caption} href={items[key].href} />;
+      })
+    );
+  }
+
   render() {
     const settings = {
       dots: true,
@@ -38,47 +59,7 @@ class Carousel extends Component {
     return (
       <Card>
         <Slider {...settings}>
-          <div>
-            <Image src='4-5-one.png' />
-            <Caption>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </Caption>
-          </div>
-          <div>
-            <Image src='4-5-two.png' />
-            <Caption>
-              <p>Lorem ipsum dolor sit amet</p>
-              <BuyLink href='http://google.com'/>
-            </Caption>
-          </div>
-          <div>
-            <Image src='4-5-one.png' />
-            <Caption>
-              <p>Lorem ipsum dolor sit amet</p>
-              <BuyLink href='http://google.com'/>
-            </Caption>
-          </div>
-          <div>
-            <Image src='4-5-two.png' />
-            <Caption>
-              <p>Lorem ipsum dolor sit amet</p>
-              <BuyLink href='http://google.com'/>
-            </Caption>
-          </div>
-          <div>
-            <Image src='4-5-one.png' />
-            <Caption>
-              <p>Lorem ipsum dolor sit amet</p>
-              <BuyLink href='http://google.com'/>
-            </Caption>
-          </div>
-          <div>
-            <Image src='4-5-two.png' />
-            <Caption>
-              <p>Lorem ipsum dolor sit amet</p>
-              <BuyLink href='http://google.com'/>
-            </Caption>
-          </div>
+          {this.displayLooks(looks)}
         </Slider>
       </Card>
     );
