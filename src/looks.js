@@ -1,8 +1,11 @@
 const looks = {
   look1: {
     fit: {
-      src: 'fits/1/mike.jpg',
-      caption: 'Setting the tone',
+      src: 'fits/1/fit.jpg',
+      model: {
+        name: 'Michael Fatoki',
+        link: 'https://www.instagram.com/lovekaizen'
+      },
       photographer: {
         name: 'Jonathan Catchpowle',
         link: 'https://www.instagram.com/catchpowle'

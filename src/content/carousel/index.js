@@ -34,7 +34,7 @@ class Carousel extends Component {
   }
 
   displayFit(fit, key) {
-    return <Fit key={key} src={fit.src} photographer={fit.photographer} />;
+    return <Fit key={key} src={fit.src} model={fit.model} photographer={fit.photographer} />;
   }
 
   displayItems(items) {
