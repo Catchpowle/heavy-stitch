@@ -25,7 +25,7 @@ const looks = {
       item3: {
         src: 'fits/1/t-shirt.jpg',
         caption: 'UNIQLO Crew Neck T-Shirt - White',
-        href: 'https://www.uniqlo.com/uk/en/product/men-supima-cotton-crew-neck-short-sleeve-t-shirt-404136.html'
+        href: 'https://www.uniqlo.com/uk/en/product/men-supima-cotton-crew-neck-short-sleeve-t-shirt-404136.html?dwvar_404136_size=SMB004&dwvar_404136_color=COL00'
       },
       item4: {
         src: 'fits/1/shoes.jpg',
