@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Slider from 'react-slick';
 import { PrevArrow, NextArrow } from './arrows';
-import looks from '../../looks.js';
 import { Fit, Item } from './slides';
 import './slick.css';
 
@@ -19,22 +19,17 @@ const Card = styled.div`
 `;
 
 class Carousel extends Component {
-  displayLooks(looks) {
-    return (Object.keys(looks).map(key => {
-      const fit= looks[key].fit;
-      const items = looks[key].items;
-
-      return (
-        [
-          this.displayFit(fit, key),
-          this.displayItems(items)
-        ]
-      );
-    }));
+  displayLook() {
+    return (
+      [
+        this.displayFit(this.props.fit),
+        this.displayItems(this.props.items)
+      ]
+    );
   }
 
-  displayFit(fit, key) {
-    return <Fit key={key} src={fit.src} model={fit.model} photographer={fit.photographer} />;
+  displayFit(fit) {
+    return <Fit key={this.props.key} src={fit.src} model={fit.model} photographer={fit.photographer} />;
   }
 
   displayItems(items) {
@@ -59,7 +54,7 @@ class Carousel extends Component {
     return (
       <Card>
         <Slider {...settings}>
-          {this.displayLooks(looks)}
+          {this.displayLook()}
         </Slider>
       </Card>
     );
@@ -67,3 +62,9 @@ class Carousel extends Component {
 }
 
 export default Carousel;
+
+Carousel.propTypes = {
+  fit: PropTypes.object,
+  items: PropTypes.object,
+  key: PropTypes.number
+};
