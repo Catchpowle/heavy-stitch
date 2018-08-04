@@ -6,7 +6,7 @@ import looks from '../looks.js';
 
 class Content extends Component {
   displayLooks(looks) {
-    return (Object.keys(looks).reverse().map(key => {
+    return (Object.keys(looks).map(key => {
       const fit = looks[key].fit;
       const items = looks[key].items;
 
