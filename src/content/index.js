@@ -1,28 +1,64 @@
-import React, { Component } from 'react';
+import React from 'react';
+import gql from 'graphql-tag';
+import { graphql } from 'react-apollo';
 import Wrapper from './wrapper.js';
 import Channels from './channels';
 import Carousel from './carousel';
-import looks from '../looks.js';
 
-class Content extends Component {
-  displayLooks(looks) {
-    return (Object.keys(looks).map(key => {
-      const fit = looks[key].fit;
-      const items = looks[key].items;
-
-      return <Carousel key={key} fit={fit} items={items} />;
+const Content = ({ data: { loading, error, looks } }) => {
+  function displayLooks(looks) {
+    return (looks.map(look => {
+      return <Carousel key={look.id} fit={look.fit} items={look.items} />;
     }));
   }
 
+  if (error) return <Wrapper><h2>Error fetching looks!</h2></Wrapper>;
 
-  render() {
+  if (!loading) {
     return (
       <Wrapper>
-        {this.displayLooks(looks)}
+        {displayLooks(looks)}
         <Channels/>
       </Wrapper>
     );
   }
-}
+  return <Wrapper><h2>Loading looks...</h2></Wrapper>;
+};
 
-export default Content;
+const looks = gql`
+  query looks {
+    looks {
+      id
+      fit {
+        id
+        photo {
+          id
+          url
+        }
+        photographer {
+          name
+          link
+        }
+        model {
+          name
+          link
+        }
+      }
+      items {
+        id
+        photo {
+          id
+          url
+        }
+        caption
+        source
+      }
+      gender {
+        id
+        name
+      }
+    }
+  }
+`;
+
+export default graphql(looks)(Content);

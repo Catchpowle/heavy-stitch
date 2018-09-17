@@ -29,13 +29,13 @@ class Carousel extends Component {
   }
 
   displayFit(fit) {
-    return <Fit key={this.props.key} src={fit.src} model={fit.model} photographer={fit.photographer} />;
+    return <Fit key={fit.id} src={fit.photo.url} model={fit.model} photographer={fit.photographer} />;
   }
 
   displayItems(items) {
     return (
-      Object.keys(items).map(key => {
-        return <Item key={key} src={items[key].src} caption={items[key].caption} href={items[key].href} />;
+      items.map(item => {
+        return <Item key={item.id} src={item.photo.url} caption={item.caption} href={item.source} />;
       })
     );
   }
@@ -65,6 +65,5 @@ export default Carousel;
 
 Carousel.propTypes = {
   fit: PropTypes.object,
-  items: PropTypes.object,
-  key: PropTypes.number
+  items: PropTypes.array
 };
